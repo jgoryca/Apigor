@@ -75,6 +75,11 @@ body {
   display: none;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(85, 71, 0, 0.5);
+}
+
 /*******************************/
 /*HEADER*/
 /******************************/
@@ -169,11 +174,28 @@ h1 {
 }
 
 .carousel-text {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1.6;
   font-weight: 500;
   text-align: center;
 }
+
+.carousel-text p {
+  margin-top: 4.8rem;
+  font-weight: 600;
+}
+
+.carousel-text-link:link,
+.carousel-text-link:visited {
+  text-decoration: none;
+  color: #554700;
+}
+
+.carousel-text-link:hover,
+.carousel-text-link:active {
+  color: rgba(85, 71, 0, 0.5);
+}
+
 .carousel-img {
   width: 40rem;
   border-radius: 8px;
