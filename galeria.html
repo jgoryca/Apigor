@@ -17,11 +17,11 @@
   </head>
   <body>
     <header>
-      <figure class="logo">
+      <div class="logo">
         <a href="index.html" class="logo-link">
           <img src="img/logo1.jpg" alt="Logo Gospodarstwa Pasiecznego Apigor" />
         </a>
-      </figure>
+      </div>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -45,25 +45,75 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <section>
-          <div class="company-name">
-            <h1>Gospodarstwo Pasieczne "APIGOR"</h1>
-            <h2 id="h2--main">w Wytrzyszczce</h2>
-            <h3 id="h3--main">Pasieka Goryców</h3>
-          </div>
-        </section>
-      </div>
+      <div class="container"></div>
     </main>
-    <footer>
-      <!-- <div id="copyright">
-        &copy; 2023, created by
-        <a
-          href="mailto:jagor103@gmail.com?subject=Zapytanie ze strony apigor.pl"
-          ><strong>Jarosław Goryca</strong></a
-        >
-      </div> -->
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <div class="footer-logo">
+            <a href="index.html" class="footer-logo-link"
+              ><img
+                src="img/logo2.jpg"
+                alt="Logo Gospodarstwa Pasiecznego Apigor"
+                class="footer-logo-img"
+            /></a>
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2023 by Apigor. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <address class="contacts">
+            <p class="address">Gospodarstwo Pasieczne "Apigor"</p>
+            <p class="address">Wytrzyszczka 103</p>
+            <p class="address">32-860 Czchów</p>
+            <p class="address">nr weterynaryjny: 12 02 71 152</p>
+          </address>
+        </div>
+        <div class="nav-col">
+          <p class="footer-nav">
+            <ion-icon class="footer-icon" name="call-outline"></ion-icon>
+            <a class="footer-link" href="tel:18 2638023">(18) 263 80 23</a>
+          </p>
+          <p class="footer-nav">
+            <ion-icon
+              class="footer-icon"
+              name="phone-portrait-outline"
+            ></ion-icon>
+            <a class="footer-link" href="tel:+48507025618">507 025 618</a>
+          </p>
+          <p class="footer-nav">
+            <ion-icon
+              class="footer-icon"
+              name="phone-portrait-outline"
+            ></ion-icon>
+            <a class="footer-link" href="tel:+48502563373">502 563 373</a>
+          </p>
+          <p class="footer-nav">
+            <ion-icon class="footer-icon" name="mail-open-outline"></ion-icon>
+            <a class="footer-link" href="mailto:pasieka@apigor.pl"
+              >pasieka@apigor.pl</a
+            >
+          </p>
+        </div>
+        <div class="nav-col">
+          <a href="produkty-pszczele.html" class="footer-link"
+            >Produkty pszczele</a
+          >
+          <a href="matki-pszczele.html" class="footer-link">Matki pszczele</a>
+          <a href="apiterapia.html" class="footer-link">Apiterapia</a>
+          <a href="kontakt.html" class="footer-link">Kontakt</a>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

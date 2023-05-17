@@ -17,11 +17,11 @@
   </head>
   <body>
     <header>
-      <figure class="logo">
+      <div class="logo">
         <a href="index.html" class="logo-link">
           <img src="img/logo1.jpg" alt="Logo Gospodarstwa Pasiecznego Apigor" />
         </a>
-      </figure>
+      </div>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -46,7 +46,7 @@
     </header>
     <main>
       <div class="container">
-        <section>
+        <section class="index-main">
           <div class="company-name">
             <h1>Gospodarstwo Pasieczne "APIGOR"</h1>
             <h2 id="h2--main">w Wytrzyszczce</h2>
@@ -63,11 +63,15 @@
                 >
               </p>
             </div>
-            <img
-              src="img/pasieka-3.jpg"
-              alt="Pasieka Apigor"
-              class="carousel-img carousel-img--1"
-            />
+            <div class="carousel-img--1">
+              <a href="o-nas.html" class="carousel-img-link">
+                <img
+                  src="img/pasieka-3.jpg"
+                  alt="Pasieka Apigor"
+                  class="carousel-img"
+                />
+              </a>
+            </div>
             <div class="carousel-text carousel-text--2 hidden">
               Pszczelarzom oferujemy matki pszczele z&nbsp;naszej hodowli.
               Miodne, łagodne i&nbsp;nierojliwe. W ofercie mamy także odkłady
@@ -78,11 +82,15 @@
                 >
               </p>
             </div>
-            <img
-              src="img/matka-pszczela--1.jpg"
-              alt="Matka pszczela w otoczeniu pszczół robotnic"
-              class="carousel-img carousel-img--2 hidden"
-            />
+            <div class="carousel-img--2 hidden">
+              <a href="matki-pszczele.html" class="carousel-img-link">
+                <img
+                  src="img/matka-pszczela--1.jpg"
+                  alt="Matka pszczela w otoczeniu pszczół robotnic"
+                  class="carousel-img"
+                />
+              </a>
+            </div>
             <div class="carousel-text carousel-text--3 hidden">
               Wytrzyszczka to bardzo urokliwe miejsce położone na&nbsp;zachodnim
               brzegu Jeziora Czchowskiego, sztucznego zbiornika na&nbsp;Dunajcu.
@@ -92,11 +100,15 @@
                 >
               </p>
             </div>
-            <img
-              src="img/wytrzyszczka--1.jpg"
-              alt="Wytrzyszczka - widok na Jezioro Czchowskie"
-              class="carousel-img carousel-img--3 hidden"
-            />
+            <div class="carousel-img--3 hidden">
+              <a href="galeria.html" class="carousel-img-link">
+                <img
+                  src="img/wytrzyszczka--3.jpg"
+                  alt="Wytrzyszczka - widok na Jezioro Czchowskie"
+                  class="carousel-img"
+                />
+              </a>
+            </div>
             <div class="carousel-text carousel-text--4 hidden">
               Inhalacja ulowym powietrzem i&nbsp;odpoczynek w&nbsp;atmosferze
               pracującej rodziny pszczelej. Bezpieczne i&nbsp;relaksujace.
@@ -106,11 +118,15 @@
                 >
               </p>
             </div>
-            <img
-              src="img/api-domek--1.jpg"
-              alt="Api-domek"
-              class="carousel-img carousel-img--4 hidden"
-            />
+            <div class="carousel-img--4 hidden">
+              <a href="apiterapia.html" class="carousel-img-link">
+                <img
+                  src="img/api-domek--2.jpg"
+                  alt="Api-domek"
+                  class="carousel-img"
+                />
+              </a>
+            </div>
             <div class="carousel-text carousel-text--5 hidden">
               Oferujemy produkty pszczele, pochodzące wyłącznie z&nbsp;naszej,
               własnej pasieki. Miód spadziowy z&nbsp;Wytrzyszczki
@@ -121,11 +137,15 @@
                 >
               </p>
             </div>
-            <img
-              src="img/plaster--2.jpg"
-              alt="Plaster miodu"
-              class="carousel-img carousel-img--5 hidden"
-            />
+            <div class="carousel-img--5 hidden">
+              <a href="produkty-pszczele.html" class="carousel-img-link">
+                <img
+                  src="img/plaster--2.jpg"
+                  alt="Plaster miodu"
+                  class="carousel-img"
+                />
+              </a>
+            </div>
 
             <button class="btn btn--left">
               <svg
@@ -172,8 +192,82 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <div class="footer-logo">
+            <a href="index.html" class="footer-logo-link"
+              ><img
+                src="img/logo2.jpg"
+                alt="Logo Gospodarstwa Pasiecznego Apigor"
+                class="footer-logo-img"
+            /></a>
+          </div>
+          <p class="copyright">
+            Copyright &copy; 2023 by Apigor. <br />
+            All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <address class="contacts">
+            <p class="address">Gospodarstwo Pasieczne "Apigor"</p>
+            <p class="address">Wytrzyszczka 103</p>
+            <p class="address">32-860 Czchów</p>
+            <p class="address">nr weterynaryjny: 12 02 71 152</p>
+          </address>
+        </div>
+        <div class="nav-col">
+          <p class="footer-nav">
+            <ion-icon class="footer-icon" name="call-outline"></ion-icon>
+            <a class="footer-link" href="tel:18 2638023">(18) 263 80 23</a>
+          </p>
+          <p class="footer-nav">
+            <ion-icon
+              class="footer-icon"
+              name="phone-portrait-outline"
+            ></ion-icon>
+            <a class="footer-link" href="tel:+48514638766">514 638 766</a>
+          </p>
+          <p class="footer-nav">
+            <ion-icon
+              class="footer-icon"
+              name="phone-portrait-outline"
+            ></ion-icon>
+            <a class="footer-link" href="tel:+48507025618">507 025 618</a>
+          </p>
+          <p class="footer-nav">
+            <ion-icon
+              class="footer-icon"
+              name="phone-portrait-outline"
+            ></ion-icon>
+            <a class="footer-link" href="tel:+48502563373">502 563 373</a>
+          </p>
+          <p class="footer-nav">
+            <ion-icon class="footer-icon" name="mail-open-outline"></ion-icon>
+            <a class="footer-link" href="mailto:pasieka@apigor.pl"
+              >pasieka@apigor.pl</a
+            >
+          </p>
+        </div>
+        <div class="nav-col">
+          <a href="o-nas.html" class="footer-link">O nas</a>
+          <a href="produkty-pszczele.html" class="footer-link"
+            >Produkty pszczele</a
+          >
+          <a href="matki-pszczele.html" class="footer-link">Matki pszczele</a>
+          <a href="apiterapia.html" class="footer-link">Apiterapia</a>
+          <a href="galeria.html" class="footer-link">Galeria</a>
+          <a href="kontakt.html" class="footer-link">Kontakt</a>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
