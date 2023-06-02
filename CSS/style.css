@@ -93,6 +93,7 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 4.8rem;
 }
 
 .grid--4-cols {
@@ -107,6 +108,7 @@ body {
   text-align: center;
   margin: 9.6rem auto;
   font-size: 3.6rem;
+  text-transform: uppercase;
 }
 
 *:focus {
@@ -147,7 +149,7 @@ header {
   font-size: 1.6rem;
   /* font-weight: 600; */
   background-color: #806e15;
-  color: #fff1aa;
+  color: #fff9dd;
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   transition: all 0.3s;
@@ -331,6 +333,8 @@ h2 {
 
 .about-text {
   font-size: 2.4rem;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .about-img {
@@ -354,8 +358,11 @@ h2 {
 /*PRODUKTY PSZCZELE*/
 /*********************************/
 
-.products {
-  padding: 9.6rem 0;
+.products-text {
+  width: 70%;
+  margin: 3.2rem auto;
+  padding: 6.4rem 0;
+  font-size: 2.4rem;
 }
 
 .items {
@@ -366,6 +373,11 @@ h2 {
   box-shadow: 0 0.4rem 0.8rem rgba(85, 71, 0, 0.75);
   border-radius: 12px;
   overflow: hidden;
+  transition: all 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-1rem);
 }
 
 .item-img {
@@ -400,7 +412,421 @@ h2 {
 .item-icon {
   height: 2rem;
   width: 2rem;
+  color: #37b24d;
 }
+
+.item--sold {
+  /* opacity: 0.6; */
+  box-shadow: 0 0.1rem 0.2rem rgba(85, 71, 0, 0.75);
+  position: relative;
+}
+
+.item--sold:hover {
+  transform: translateY(0);
+}
+
+.item--sold::after {
+  content: "Wyprzedano";
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 3.6rem;
+  right: -5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #e03131;
+  color: #fff1aa;
+  opacity: 1;
+  padding: 0.8rem 4.8rem;
+  transform: rotate(-45deg);
+}
+
+/*********************************/
+/*ULOTERAPIA*/
+/*********************************/
+.bee-therapy figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bee-therapy-text-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 3.2rem;
+}
+
+.bee-therapy-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  line-height: 1.05;
+  text-align: center;
+  background-color: #d4c36a;
+  padding: 2.4rem;
+  border-radius: 12px;
+}
+.bee-therapy-img {
+  width: 70%;
+  border-radius: 12px;
+}
+
+.bee-therapy-list {
+  display: flex;
+  justify-content: center;
+  font-size: 2.4rem;
+  padding: 1.2rem;
+}
+
+.bee-therapy-list ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.bee-therapy-list ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.bee-therapy-icon {
+  height: 2rem;
+  width: 2rem;
+  /* color: #37b24d; */
+}
+
+.bee-therapy-2 {
+  background-color: #d4c36a;
+  border-radius: 12px;
+  padding: 3.2rem;
+}
+
+.bee-therapy-2-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.bee-therapy-contact {
+  margin: 6.4rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bee-therapy-contact ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 2.4rem;
+}
+
+.bee-therapy-contact ul li address {
+  font-style: normal;
+}
+
+.bee-therapy-price {
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); */
+  border-radius: 9px;
+  padding: 3.2rem;
+  border: 1px solid #554700;
+  /* background-color: #fff1aa; */
+}
+
+.bee-therapy-price ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bee-therapy-price ul li:nth-child(odd) {
+  font-weight: 600;
+}
+
+.bee-therapy-price ul li:nth-child(2n) {
+  font-size: 2rem;
+}
+
+.bee-therapy-price-img {
+  height: 25.6rem;
+  border-radius: 9px;
+}
+
+.bee-therapy-additional {
+  margin: 9.6rem auto;
+  text-align: center;
+}
+
+.bee-therapy-additional h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 6.4rem;
+}
+
+.bee-therapy-additional p {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+/*********************************/
+/*GALERIA*/
+/*********************************/
+
+/* .gallery-container {
+  position: relative;
+} */
+
+.gallery-intro {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  width: 80%;
+  margin: 9.6rem auto;
+  padding: 3.2rem;
+  background-color: #d4c36a;
+  border-radius: 12px;
+}
+
+.gallery-above {
+  width: 80%;
+  margin: 6.4rem auto;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.gallery-below {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+  width: 100%;
+  margin: 9.6rem auto;
+}
+
+.gallery-previev {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.gallery-above .gallery-previev {
+  gap: 2.4rem;
+}
+
+/* .gallery-above .gallery-previev figure {
+  overflow: hidden;
+} */
+
+.thumbnail {
+  width: 100%;
+  border-radius: 9px;
+  transition: all 0.4s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+}
+
+.popup.hidden {
+  display: none;
+  position: relative;
+}
+
+.popup-close {
+  top: 2%;
+  right: 5%;
+  position: absolute;
+  /* background: rgba(85, 71, 0, 0.5); */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.close-icon {
+  width: 9.6rem;
+  height: 9.6rem;
+  color: #554700;
+  transition: all 0.3s;
+}
+
+.close-icon:hover {
+  color: #fff1aa;
+}
+
+.popup-gallery {
+  position: relative;
+}
+
+.gallery-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.btn-popup {
+  position: absolute;
+  background-color: #fff1aa;
+  border: none;
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-popup:hover {
+  background-color: #806e15;
+}
+
+.btn-popup .btn-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.btn-popup--left {
+  left: -10%;
+  transform: translate(0, -50%);
+}
+
+.btn-popup--right {
+  right: -10%;
+  transform: translate(0, -50%);
+}
+
+/*********************************/
+/*KONTAKT*/
+/*********************************/
+
+.contact {
+  margin-bottom: 16rem;
+}
+
+.contact-main {
+  margin: 9.6rem auto;
+  width: 50%;
+  text-align: center;
+  /* background-color: #d4c36a;
+  padding: 3.2rem;
+  border-radius: 12px; */
+}
+
+.contact-address {
+  font-style: normal;
+  font-size: 3.2rem;
+  line-height: 1.6;
+}
+
+.contact-vet-number {
+  font-size: 2.4rem;
+  line-height: 1.6;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 3.2rem;
+  margin-top: 4.8rem;
+  font-weight: 600;
+}
+
+.contact-email-link:link,
+.contact-email-link:visited {
+  text-decoration: none;
+  color: #554700;
+}
+
+.contact-email-link:hover,
+.contact-email-link:active {
+  color: #806e15;
+}
+
+.contact-item {
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  background-color: #d4c36a;
+  padding: 3.2rem;
+  border-radius: 12px;
+}
+
+.contact-img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  text-decoration: none;
+  color: #554700;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  color: #806e15;
+}
+
+.contact-item ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.contact-item li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contact-item-address {
+  font-style: normal;
+}
+
 /*********************************/
 /*FOOTER*/
 /*********************************/
@@ -438,7 +864,7 @@ h2 {
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 3rem;
   font-style: normal;
   font-size: 1.6rem;
 }
