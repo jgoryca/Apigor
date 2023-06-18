@@ -183,7 +183,6 @@ h1 {
 
 h2 {
   font-size: 2.4rem;
-  margin: 0 auto;
 }
 
 #h2--main {
@@ -354,11 +353,16 @@ h2 {
   color: #806e15;
 }
 
+figcaption {
+  font-size: 1.4rem;
+}
+
 /*********************************/
 /*PRODUKTY PSZCZELE*/
 /*********************************/
 
 .products-text {
+  text-align: center;
   width: 70%;
   margin: 3.2rem auto;
   padding: 6.4rem 0;
@@ -416,7 +420,7 @@ h2 {
 }
 
 .item--sold {
-  /* opacity: 0.6; */
+  opacity: 0.6;
   box-shadow: 0 0.1rem 0.2rem rgba(85, 71, 0, 0.75);
   position: relative;
 }
@@ -426,18 +430,122 @@ h2 {
 }
 
 .item--sold::after {
-  content: "Wyprzedano";
+  content: "Brak";
   text-transform: uppercase;
   position: absolute;
-  bottom: 3.6rem;
-  right: -5rem;
+  bottom: 1.4rem;
+  right: -3.8rem;
   font-size: 1.4rem;
   font-weight: 700;
   background-color: #e03131;
   color: #fff1aa;
-  opacity: 1;
+  /* opacity: 1; */
   padding: 0.8rem 4.8rem;
   transform: rotate(-45deg);
+}
+
+/*********************************/
+/*MATKI PSZCZELE*/
+/*********************************/
+
+.queen-bee {
+}
+
+.queen-bee-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  margin: 6.4rem auto;
+}
+
+.queen-bee-text {
+  font-size: 2.4rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.bee-price {
+  margin: 2.4rem auto;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.split-price {
+  margin: 2rem auto;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.queen-bee-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.queen-bee-description {
+  text-align: center;
+}
+
+.queen-bee-description h3 {
+  font-size: 2.8rem;
+  margin-bottom: 3.2rem;
+}
+.queen-bee-description-text {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.queen-bee-order-box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 12.8rem auto;
+  width: 70%;
+  /* background-color: #d4c36a; */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to right bottom, #aa9739, #d4c36a);
+}
+
+.queen-bee-order {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.queen-bee-order-img-box {
+  height: 35rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(170, 151, 57, 0.4),
+      rgba(212, 194, 106, 0.4)
+    ),
+    url("../img/matka-pszczela-3.png");
+  background-size: cover;
+}
+
+.queen-bee-order-title {
+  font-size: 4rem;
+  font-weight: 600;
+  border-bottom: 3px solid #554700;
+}
+
+.queen-bee-order-link {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.queen-bee-order-link a:link,
+.queen-bee-order-link a:visited {
+  text-decoration: none;
+  color: #554700;
 }
 
 /*********************************/
@@ -638,6 +746,7 @@ h2 {
 
 .thumbnail:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .popup {
@@ -649,6 +758,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  animation: fade-in 0.3s;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   height: 100vh;
@@ -659,6 +769,10 @@ h2 {
 .popup.hidden {
   display: none;
   position: relative;
+}
+
+.popup.fade-out {
+  animation: fade-out 0.3s both;
 }
 
 .popup-close {
@@ -731,6 +845,103 @@ h2 {
   transform: translate(0, -50%);
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*********************************/
+/*MIEJSCA*/
+/*********************************/
+
+.places {
+  margin: 6.4rem auto 12.8rem auto;
+}
+
+.places-header {
+  display: flex;
+  align-items: center;
+}
+
+.places h2 {
+  font-size: 3.2rem;
+  text-align: center;
+  padding: 2.4rem;
+}
+
+.place-text {
+  margin-top: 2.4rem;
+  margin-bottom: 3.2rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.place-image {
+  position: relative;
+}
+
+.btn-places {
+  position: absolute;
+  background-color: #fff1aa;
+  border: none;
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-places:hover {
+  background-color: #806e15;
+}
+
+.btn-places .btn-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.btn-places--left {
+  left: -10%;
+  transform: translate(0, -50%);
+}
+
+.btn-places--right {
+  right: -10%;
+  transform: translate(0, -50%);
+}
+
+.icon-places {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.back:link,
+.back:visited {
+  color: #554700;
+}
+
+.back:hover,
+.back:active {
+  color: #806e15;
+}
 /*********************************/
 /*KONTAKT*/
 /*********************************/
