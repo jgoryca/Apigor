@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/queries.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pasieka Apigor</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="places">
+          <div class="places-header">
+            <a href="galeria.html" class="back">
+              <ion-icon
+                name="arrow-back-circle-outline"
+                class="icon-places"
+              ></ion-icon>
+            </a>
+            <h2>Prom w Wytrzyszczce</h2>
+          </div>
+          <div class="place-text">
+            Przeprawa promowa przez Jezioro Czchowskie pomiędzy Wytrzyszczką
+            a&nbsp;Tropiem, powstała po II&nbsp;Wojnie Światowej, w&nbsp;miejsce
+            wysadzonego przez wycofujących się Niemców mostu. Dość uciążliwa dla
+            mieszkańców - dla turystów jest niemałą atrakcją. Prom kursuje przez
+            cały rok w godzinach 5.00 - 21.00, z&nbsp;przerwą od 12.00 do 13.00
+            i&nbsp;jest darmowy.
+          </div>
+          <figure class="place-image">
+            <img
+              src="img/gallery/prom-w-Wytrzyszczce-1.png"
+              alt="Prom w Wytrzyszczce"
+              class="place-image-1"
+            />
+            <img
+              src="img/gallery/prom-w-Wytrzyszczce-2.png"
+              alt="Prom w Wytrzyszczce"
+              class="place-image-2 hidden"
+            />
+            <img
+              src="img/gallery/prom-w-Wytrzyszczce-3.png"
+              alt="Prom w Wytrzyszczce"
+              class="place-image-3 hidden"
+            />
+            <button
+              class="btn btn-places btn-places--left"
+              aria-label="Poprzednie zdjęcie"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="btn-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              class="btn btn-places btn-places--right"
+              aria-label="Następne zdjęcie"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="btn-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </figure>
+          <!-- <figure class="place-1-image"></figure>
+          <figure class="place-1-image"></figure> -->
+        </section>
+      </div>
+    </main>
+    <script src="js/place.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
