@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="description"
+      content="Rodzinne Gospodarstwo Pasieczne Apigor - Pasieka Goryców. Oferujemy najwyższej jakości miód spadziowy i inne produkty pszczele."
+    />
+    <meta name="author" content="Jarosław Goryca" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link href="CSS/style.css" rel="stylesheet" />
     <link href="CSS/queries.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +20,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Pasieka Apigor</title>
+    <title>Gospodarstwo Pasieczne Apigor &mdash; Pasieka Goryców</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HLYMQXLYDQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HLYMQXLYDQ");
+    </script>
   </head>
   <body>
     <header>
@@ -61,7 +81,7 @@
         <div class="grid grid--3-cols items" id="items">
           <div class="item item--1 item--sold">
             <img
-              src="img/miód-wielokwiatowy--1.jpg"
+              src="img/miod-wielokwiatowy.webp"
               alt="Miód wielokwiatowy"
               class="item-img"
             />
@@ -122,7 +142,7 @@
           </div>
           <div class="item item--2 item--sold">
             <img
-              src="img/miód-nektarowo-spadziowy--1.jpg"
+              src="img/miod-nektarowo-spadziowy.webp"
               alt="Miód nektarowo-spadziowy"
               class="item-img"
             />
@@ -182,7 +202,7 @@
             </div>
           </div>
           <div class="item item--3">
-            <img src="img/propolis--1.jpg" alt="Propolis" class="item-img" />
+            <img src="img/propolis.webp" alt="Propolis" class="item-img" />
             <div class="item-description">
               <p class="item-name">Propolis</p>
               <ul class="item-attributes">
@@ -240,7 +260,7 @@
           </div>
           <div class="item item--4">
             <img
-              src="img/świeca--1.jpg"
+              src="img/swiece.webp"
               alt="Świece z wosku pszczelego"
               class="item-img"
             />
@@ -301,7 +321,7 @@
           </div>
           <div class="item item--5">
             <img
-              src="img/nalewka-z-propolisu--1 .jpg"
+              src="img/nalewka-z-propolisu.webp"
               alt="Nalewka z propolisu"
               class="item-img"
             />
@@ -361,7 +381,7 @@
             </div>
           </div>
           <div class="item item--6">
-            <img src="img/pyłek.jpg" alt="Pyłek pszczeli" class="item-img" />
+            <img src="img/pylek.webp" alt="Pyłek pszczeli" class="item-img" />
             <div class="item-description">
               <p class="item-name">Pyłek pszczeli</p>
               <ul class="item-attributes">
@@ -432,7 +452,7 @@
             /></a>
           </div>
           <p class="copyright">
-            Copyright &copy; 2023 by Apigor. <br />
+            Copyright &copy; <span class="year">2023</span> by Apigor. <br />
             All rights reserved.
           </p>
         </div>

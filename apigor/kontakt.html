@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+
+    <meta
+      name="description"
+      content="Rodzinne Gospodarstwo Pasieczne Apigor - Pasieka Goryców. Oferujemy najwyższej jakości miód spadziowy i inne produkty pszczele."
+    />
+    <meta name="author" content="Jarosław Goryca" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link href="CSS/style.css" rel="stylesheet" />
     <link href="CSS/queries.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +21,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Pasieka Apigor</title>
+    <title>Gospodarstwo Pasieczne Apigor &mdash; Pasieka Goryców</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HLYMQXLYDQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HLYMQXLYDQ");
+    </script>
   </head>
   <body>
     <header>
@@ -95,7 +116,7 @@
           </div>
           <div class="contact-item contact-item--2">
             <img
-              src="img/jarosław-goryca.jpg"
+              src="img/jaroslaw-goryca.jpg"
               alt="Jarosław Goryca"
               class="contact-img"
             />
@@ -165,7 +186,7 @@
             /></a>
           </div>
           <p class="copyright">
-            Copyright &copy; 2023 by Apigor. <br />
+            Copyright &copy; <span class="year">2023</span> by Apigor. <br />
             All rights reserved.
           </p>
         </div>

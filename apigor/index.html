@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="description"
+      content="Rodzinne Gospodarstwo Pasieczne Apigor - Pasieka Goryców. Oferujemy najwyższej jakości miód spadziowy i inne produkty pszczele."
+    />
+    <meta name="author" content="Jarosław Goryca" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link href="CSS/style.css" rel="stylesheet" />
     <link href="CSS/queries.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +20,22 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Pasieka Apigor</title>
+    <title>Gospodarstwo Pasieczne Apigor &mdash; Pasieka Goryców</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HLYMQXLYDQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HLYMQXLYDQ");
+    </script>
   </head>
   <body>
     <header>
@@ -71,7 +92,7 @@
             <div class="carousel-img--1">
               <a href="o-nas.html" class="carousel-img-link">
                 <img
-                  src="img/pasieka-1.png"
+                  src="img/pasieka-1.webp"
                   alt="Pasieka Apigor"
                   class="carousel-img"
                 />
@@ -91,7 +112,7 @@
             <div class="carousel-img--2 hidden">
               <a href="galeria.html" class="carousel-img-link">
                 <img
-                  src="img/wytrzyszczka--1.jpg"
+                  src="img/wytrzyszczka-1.webp"
                   alt="Wytrzyszczka - widok na Jezioro Czchowskie"
                   class="carousel-img"
                 />
@@ -110,7 +131,7 @@
             <div class="carousel-img--3 hidden">
               <a href="produkty-pszczele.html" class="carousel-img-link">
                 <img
-                  src="img/produkty-1.png"
+                  src="img/produkty-1.webp"
                   alt="Słoiki z miodem"
                   class="carousel-img"
                 />
@@ -129,7 +150,7 @@
             <div class="carousel-img--4 hidden">
               <a href="matki-pszczele.html" class="carousel-img-link">
                 <img
-                  src="img/matka-pszczela--1.jpg"
+                  src="img/matka-pszczela-1.webp"
                   alt="Matka pszczela w otoczeniu pszczół robotnic"
                   class="carousel-img"
                 />
@@ -148,14 +169,14 @@
             <div class="carousel-img--5 hidden">
               <a href="uloterapia.html" class="carousel-img-link">
                 <img
-                  src="img/api-domek--4.png"
+                  src="img/api-domek-4.webp"
                   alt="Api-domek"
                   class="carousel-img"
                 />
               </a>
             </div>
 
-            <button class="btn btn--left">
+            <button class="btn btn--left" aria-label="Poprzedni">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -171,7 +192,7 @@
                 />
               </svg>
             </button>
-            <button class="btn btn--right">
+            <button class="btn btn--right" aria-label="Następny">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -188,12 +209,19 @@
               </svg>
             </button>
             <div class="dots">
-              <button class="dot dot--1 dot--active">&nbsp;</button>
-              <button class="dot dot--2">&nbsp;</button>
-              <button class="dot dot--3">&nbsp;</button>
-              <button class="dot dot--4">&nbsp;</button>
-              <button class="dot dot--5">&nbsp;</button>
-              <!-- <button class="dot dot--6">&nbsp;</button> -->
+              <button class="dot dot--1 dot--active" aria-label="O nas">
+                &nbsp;
+              </button>
+              <button class="dot dot--2" aria-label="Nasza okolica">
+                &nbsp;
+              </button>
+              <button class="dot dot--3" aria-label="Nasze produkty">
+                &nbsp;
+              </button>
+              <button class="dot dot--4" aria-label="Matki pszczele">
+                &nbsp;
+              </button>
+              <button class="dot dot--5" aria-label="Uloterapia">&nbsp;</button>
             </div>
           </div>
         </section>
@@ -211,7 +239,7 @@
             /></a>
           </div>
           <p class="copyright">
-            Copyright &copy; 2023 by Apigor. <br />
+            Copyright &copy; <span class="year">2023</span> by Apigor. <br />
             All rights reserved.
           </p>
         </div>
