@@ -196,7 +196,6 @@
   }
 
   .products-text {
-    font-size: 2rem;
     margin: 2.4rem auto;
   }
 
@@ -315,6 +314,10 @@
   .btn-places .btn-icon {
     width: 3.2rem;
     height: 3.2rem;
+  }
+
+  .contact-main {
+    width: 70%;
   }
 
   .contact {
@@ -438,7 +441,7 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    padding: 4.8rem;
+    padding: 1.8rem;
   }
 
   .carousel-text {
@@ -453,33 +456,64 @@
 
   .btn {
     top: 20%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .btn:hover {
+    background-color: transparent;
+  }
+
+  .btn:hover .btn-icon {
+    stroke: #aa9739;
+  }
+
+  .btn--left {
+    transform: translate(-120%, -50%);
+  }
+
+  .btn--right {
+    transform: translate(120%, -50%);
   }
 
   .about {
-    gap: 1.6;
-    margin: 12.8rem 4.8rem;
+    flex-direction: column;
+    margin: 6.4rem 1.5rem;
+  }
+
+  .about--2 {
+    flex-direction: column-reverse;
   }
 
   .about-text {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .about-img {
-    width: 32rem;
+    width: 55rem;
+    border-radius: 12px;
   }
 
   figcaption {
-    font-size: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .products-text {
+    width: 60rem;
   }
 
   .items {
-    width: 60%;
+    width: 60rem;
     margin: 0 auto;
     grid-template-columns: 1fr;
   }
 
+  .item-attributes {
+    gap: 4rem;
+  }
+
   .item-attribute {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     gap: 0.8rem;
   }
 
@@ -624,10 +658,6 @@
     font-size: 3.2rem;
   }
 
-  .contact-main {
-    width: 60%;
-  }
-
   .contact-address {
     font-size: 2.4rem;
   }
@@ -645,8 +675,17 @@
   }
 
   .contact-item {
-    width: 60%;
+    width: 70%;
     justify-self: center;
+    gap: 5rem;
+    font-size: 2.4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .contact-img {
+    height: 10rem;
+    width: 10rem;
   }
 
   .footer-logo-img {
@@ -664,6 +703,11 @@
   .footer-link:link,
   .footer-link:visited {
     font-size: 1.2rem;
+  }
+
+  .cookie-message {
+    padding: 0.8rem 1.5rem;
+    line-height: 1.2;
   }
 }
 
@@ -690,33 +734,27 @@
 
   .carousel-text {
     padding: 1.2rem;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 
   .carousel-img {
     width: 32rem;
   }
 
-  .about {
-    flex-direction: column;
-    margin: 6.4rem auto;
-  }
-
-  .about--2 {
-    flex-direction: column-reverse;
-  }
-
-  .about-text {
-    width: 45rem;
-  }
-
   .about-img {
-    width: 45rem;
-    border-radius: 12px;
+    width: 52rem;
+  }
+
+  .products {
+    padding: 0;
   }
 
   .items {
-    width: 82%;
+    width: 50rem;
+  }
+
+  .products-text {
+    width: 50rem;
   }
 
   .queen-bee-box {
@@ -743,8 +781,16 @@
     margin: 2.4rem;
   }
 
-  .queen-bee-order-img-box {
-    height: 26rem;
+  .bee-price {
+    font-size: 2rem;
+  }
+
+  .split-price {
+    font-size: 2rem;
+  }
+
+  .queen-bee-order-box {
+    width: 90%;
   }
 
   .queen-bee-order-title {
@@ -755,6 +801,10 @@
   .queen-bee-order-link {
     gap: 1rem;
     font-size: 1.6rem;
+  }
+
+  .bee-therapy-container {
+    max-width: 95%;
   }
 
   .bee-therapy-list {
@@ -818,23 +868,27 @@
   }
 
   .contact-h2 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
   }
 
   .contact-main {
-    width: 70%;
+    width: 80%;
   }
 
   .contact-address {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .contact-vet-number {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .contact-email {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
+  }
+
+  .contact-item {
+    width: 80%;
   }
 
   .grid--footer {
@@ -855,6 +909,10 @@
   .footer-logo-img {
     width: 5rem;
   }
+
+  .cookie-message {
+    font-size: 1.2rem;
+  }
 }
 
 /********************************/
@@ -867,7 +925,7 @@
   }
   .carousel-text {
     padding: 1rem;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   .carousel-img {
@@ -897,12 +955,12 @@
   }
 
   .products-text {
-    font-size: 1.4rem;
+    width: 90%;
+    font-size: 2rem;
   }
 
   .item-attribute {
-    font-size: 1.2rem;
-    gap: 0.8rem;
+    font-size: 1.8rem;
   }
 
   .item-icon {
@@ -930,15 +988,11 @@
   }
 
   .bee-therapy-text {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .bee-therapy-list {
-    font-size: 1.6rem;
-  }
-
-  .bee-therapy-list ul li {
-    gap: 0.8rem;
+    font-size: 2rem;
   }
 
   .bee-therapy-icon {
@@ -967,11 +1021,7 @@
   }
 
   .bee-therapy-additional p {
-    font-size: 1.8rem;
-  }
-
-  .gallery-intro {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .popup-gallery {
@@ -980,6 +1030,14 @@
 
   .contact-h2 {
     font-size: 2.4rem;
+  }
+
+  .contact-main {
+    width: 90%;
+  }
+
+  .contact-item {
+    width: 90%;
   }
 
   .contacts {
