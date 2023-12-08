@@ -196,6 +196,7 @@ h1,
 
 h1 {
   font-size: 4.4rem;
+  animation: moveRight 2s ease-out;
 }
 
 h2 {
@@ -206,14 +207,44 @@ h2 {
   font-size: 3.6rem;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
+  animation: moveLeft 2s ease-out;
 }
 
 #h3--main {
   font-size: 3rem;
+  animation: moveRight 2s ease-out;
 }
 
 .company-name {
   width: 70%;
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /*********************************/
