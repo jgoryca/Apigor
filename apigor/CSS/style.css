@@ -194,6 +194,11 @@ h1,
   letter-spacing: -0.7px;
 }
 
+.company-name {
+  width: 70%;
+  backface-visibility: hidden;
+}
+
 h1 {
   font-size: 4.4rem;
   animation: moveRight 2s ease-out;
@@ -213,10 +218,6 @@ h2 {
 #h3--main {
   font-size: 3rem;
   animation: moveRight 2s ease-out;
-}
-
-.company-name {
-  width: 70%;
 }
 
 @keyframes moveRight {
