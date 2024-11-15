@@ -335,11 +335,11 @@
   }
 
   .footer-logo-img {
-    width: 5rem;
+    width: 10rem;
   }
 
   .copyright {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .contacts {
@@ -695,7 +695,7 @@
   }
 
   .copyright {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .contacts {
@@ -909,7 +909,7 @@
   }
 
   .footer-logo-img {
-    width: 5rem;
+    width: 7rem;
   }
 
   .cookie-message {
@@ -924,6 +924,7 @@
 @media (max-width: 27em) {
   .carousel {
     width: 65%;
+    display: none;
   }
   .carousel-text {
     padding: 1rem;

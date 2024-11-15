@@ -51,8 +51,6 @@ Medium: 12px
 
 */
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -1117,11 +1115,11 @@ footer {
 }
 
 .footer-logo-img {
-  width: 7rem;
+  width: 12rem;
 }
 
 .copyright {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .address-col {
