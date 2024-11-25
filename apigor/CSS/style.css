@@ -187,36 +187,29 @@ header {
   margin-bottom: 24rem;
 }
 
-h1,
-#h2--main,
-#h3--main {
-  text-align: center;
-  letter-spacing: -0.7px;
-}
-
 .company-name {
   width: 70%;
   backface-visibility: hidden;
-}
-
-h1 {
-  font-size: 4.4rem;
-  animation: moveRight 2s ease-out;
 }
 
 h2 {
   font-size: 2.4rem;
 }
 
-#h2--main {
+.h2--main {
+  text-align: center;
+  letter-spacing: -0.7px;
   font-size: 3.6rem;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
+}
+
+.h2--main-1 {
   animation: moveLeft 2s ease-out;
 }
 
-#h3--main {
-  font-size: 3rem;
+.h2--main-2 {
+  text-transform: uppercase;
   animation: moveRight 2s ease-out;
 }
 
@@ -419,7 +412,7 @@ figcaption {
   text-align: center;
   width: 70%;
   margin: 3.2rem auto;
-  padding: 6.4rem 0;
+  /* padding: 6.4rem 0; */
   font-size: 2.4rem;
 }
 
@@ -432,6 +425,9 @@ figcaption {
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .item:hover {
@@ -443,7 +439,7 @@ figcaption {
 }
 
 .item-description {
-  padding: 3.2rem 2.4rem 4.8rem 2.4rem;
+  padding: 3.2rem 2.4rem 2.4rem 2.4rem;
 }
 
 .item-name {
@@ -471,6 +467,11 @@ figcaption {
   height: 2rem;
   width: 2rem;
   color: #37b24d;
+}
+
+.item-link {
+  font-size: 2rem;
+  padding-bottom: 3.6rem;
 }
 
 .item--sold {

@@ -40,18 +40,6 @@
     margin: 2rem auto;
   }
 
-  h1 {
-    font-size: 3.6rem;
-  }
-
-  #h2--main {
-    font-size: 3rem;
-  }
-
-  #h3--main {
-    font-size: 2.4rem;
-  }
-
   .carousel-text {
     font-size: 2rem;
   }
@@ -152,18 +140,6 @@
 
   .container {
     max-width: 80rem;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-  }
-
-  #h2--main {
-    font-size: 2.4rem;
-  }
-
-  #h3--main {
-    font-size: 2rem;
   }
 
   .carousel-text {
@@ -519,6 +495,11 @@
     gap: 0.8rem;
   }
 
+  .item-link {
+    font-size: 2.8rem;
+    padding-top: 2rem;
+  }
+
   .container-quenn-bee {
     margin: 0 2.4rem;
   }
@@ -718,16 +699,8 @@
 /********************************/
 
 @media (max-width: 35em) {
-  h1 {
-    font-size: 2.4rem;
-  }
-
-  #h2--main {
-    font-size: 2rem;
-  }
-
-  #h3--main {
-    font-size: 1.6rem;
+  .h2--main {
+    font-size: 3rem;
   }
 
   .carousel {
@@ -922,6 +895,10 @@
 /********************************/
 
 @media (max-width: 27em) {
+  .h2--main {
+    font-size: 2.6rem;
+  }
+
   .carousel {
     width: 65%;
     display: none;
