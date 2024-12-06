@@ -129,13 +129,13 @@
 
 @media (max-width: 67em) {
   .main-nav-list {
-    gap: 1.6rem;
+    gap: 1.2rem;
   }
 
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 1rem;
-    padding: 0.8rem 1.6rem;
+    padding: 0.6rem 1.2rem;
   }
 
   .container {
