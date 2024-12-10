@@ -40,18 +40,6 @@
     margin: 2rem auto;
   }
 
-  h1 {
-    font-size: 3.6rem;
-  }
-
-  #h2--main {
-    font-size: 3rem;
-  }
-
-  #h3--main {
-    font-size: 2.4rem;
-  }
-
   .carousel-text {
     font-size: 2rem;
   }
@@ -141,29 +129,17 @@
 
 @media (max-width: 67em) {
   .main-nav-list {
-    gap: 1.6rem;
+    gap: 1.2rem;
   }
 
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 1rem;
-    padding: 0.8rem 1.6rem;
+    padding: 0.6rem 1.2rem;
   }
 
   .container {
     max-width: 80rem;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-  }
-
-  #h2--main {
-    font-size: 2.4rem;
-  }
-
-  #h3--main {
-    font-size: 2rem;
   }
 
   .carousel-text {
@@ -335,11 +311,11 @@
   }
 
   .footer-logo-img {
-    width: 5rem;
+    width: 10rem;
   }
 
   .copyright {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .contacts {
@@ -519,6 +495,11 @@
     gap: 0.8rem;
   }
 
+  .item-link {
+    font-size: 2.8rem;
+    padding-top: 2rem;
+  }
+
   .container-quenn-bee {
     margin: 0 2.4rem;
   }
@@ -695,7 +676,7 @@
   }
 
   .copyright {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .contacts {
@@ -718,19 +699,12 @@
 /********************************/
 
 @media (max-width: 35em) {
-  h1 {
-    font-size: 2.4rem;
-  }
-
-  #h2--main {
-    font-size: 2rem;
-  }
-
-  #h3--main {
-    font-size: 1.6rem;
+  .h2--main {
+    font-size: 3rem;
   }
 
   .carousel {
+    display: none;
     width: 60%;
   }
 
@@ -741,6 +715,54 @@
 
   .carousel-img {
     width: 32rem;
+  }
+
+  .main-mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 4rem;
+    gap: 2rem;
+  }
+
+  .main-mobile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aa9739;
+    color: #554700;
+    font-size: 2rem;
+    border-radius: 8px;
+    padding: 2rem;
+  }
+
+  .main-mobile-item-text {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .main-mobile-item-text > p {
+    margin-top: 3rem;
+  }
+
+  .main-mobile-item-text-link:link,
+  .main-mobile-item-text-link:visited {
+    text-decoration: none;
+    color: #554700;
+  }
+
+  .main-mobile-item-text-link:hover,
+  .main-mobile-item-text-link:active {
+    color: rgba(85, 71, 0, 0.5);
+  }
+
+  .main-mobile-item-img {
+    width: 40%;
+  }
+
+  .main-mobile-img {
+    width: 100%;
+    border-radius: 8px;
   }
 
   .about-img {
@@ -909,7 +931,7 @@
   }
 
   .footer-logo-img {
-    width: 5rem;
+    width: 7rem;
   }
 
   .cookie-message {
@@ -922,8 +944,13 @@
 /********************************/
 
 @media (max-width: 27em) {
+  .h2--main {
+    font-size: 2.6rem;
+  }
+
   .carousel {
     width: 65%;
+    display: none;
   }
   .carousel-text {
     padding: 1rem;
