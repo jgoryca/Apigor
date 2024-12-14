@@ -1098,6 +1098,18 @@ figcaption {
   font-style: normal;
 }
 
+.contact-map {
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.contact-map > iframe {
+  display: block;
+  max-width: 100%;
+}
+
 /*********************************/
 /*FOOTER*/
 /*********************************/

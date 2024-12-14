@@ -671,6 +671,10 @@
     width: 10rem;
   }
 
+  .contact-map {
+    max-width: 90vw;
+  }
+
   .footer-logo-img {
     width: 8rem;
   }
