@@ -350,6 +350,12 @@
     font-size: 1.6rem;
   }
 
+  .contact-map {
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+  }
+
   /*Mobile navigation*/
 
   .btn-mobile-nav {
