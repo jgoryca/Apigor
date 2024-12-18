@@ -350,6 +350,12 @@
     font-size: 1.6rem;
   }
 
+  .contact-map {
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+  }
+
   /*Mobile navigation*/
 
   .btn-mobile-nav {
@@ -669,6 +675,10 @@
   .contact-img {
     height: 10rem;
     width: 10rem;
+  }
+
+  .contact-map {
+    max-width: 90vw;
   }
 
   .footer-logo-img {
